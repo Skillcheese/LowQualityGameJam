@@ -10,12 +10,6 @@ public class FloatyMovement : MonoBehaviour
     protected float DampingAcceleration = .99f;
     [SerializeField]
     protected float DampingVelocity = .99f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        Velocity = Vector3.zero;
-        Acceleration = Vector3.zero;
-    }
 
     public void SetAcceleration(Vector3 _Acceleration)
     {
