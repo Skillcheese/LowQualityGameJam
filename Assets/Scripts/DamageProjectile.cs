@@ -27,6 +27,7 @@ public class DamageProjectile : MonoBehaviour
         if (other.gameObject == Instigator) return;
         if (other.GetComponent<DamageProjectile>()) return;
         HealthComponent hp = other.GetComponent<HealthComponent>();
+        if (hp == null) return;
         hp.TakeDamage(Damage);
         Destroy(this);
         Destroy(gameObject);

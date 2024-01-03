@@ -8,6 +8,8 @@ public class BossScript : MonoBehaviour
     private DamageProjectile BossProjectilePrefab;
     [SerializeField]
     private DamageProjectile BossProjectileMachineGunPrefab;
+    [SerializeField]
+    private LaserBeamScript LaserBeamPrefab;
     private GameObject player { get { return GameObject.Find("Player"); } }
     void Start()
     {
@@ -36,13 +38,25 @@ public class BossScript : MonoBehaviour
                 shotDelay = attackDelay / numProjectiles;
                 StartCoroutine(DoMachineGun(numProjectiles, shotDelay));
             }
-            else
+            else if(rand < .7f)
             {
                 numProjectiles = 10;
                 StartCoroutine(DoCross(numProjectiles, attackDelay / numProjectiles));
             }
+            else
+            {
+                StartCoroutine(DoLasers(3, 10));
+            }
             yield return new WaitForSeconds(attackDelay + downtime);
         }
+    }
+
+    private IEnumerator DoLasers(int numRotations, float rotationDuration)
+    {
+        LaserBeamScript laser = Instantiate(LaserBeamPrefab);
+        laser.transform.position = transform.position;
+        laser.InitLaserBeam(gameObject, rotationDuration, 0);
+        yield break;
     }
 
     private IEnumerator DoCross(int _Size, float _ShotDelay)

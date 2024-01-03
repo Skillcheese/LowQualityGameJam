@@ -7,13 +7,15 @@ public class PickUp : MonoBehaviour
 
     [SerializeField] int scoreToIncrement;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.tag == "Player")
+        Debug.Log("test");
+        if(other.gameObject.CompareTag("Player"))
         {
             //Function to increment points
-            PlayerManager playerManager = collision.gameObject.GetComponent<PlayerManager>();
+            PlayerManager playerManager = other.gameObject.GetComponent<PlayerManager>();
             playerManager.IncrementScore(scoreToIncrement);
+            Destroy(gameObject);
         }
     }
 }
