@@ -291,7 +291,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cookie UVE 64x64_0: 6775682296328959997
+      Cookie UVE 64x64_1: 7856720837520653074
+      Cookie UVE 64x64_2: 8960033985352811843
+      Cookie UVE 64x64_3: 1707292536532018173
+      Cookie UVE 64x64_4: -4113845497583561047
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

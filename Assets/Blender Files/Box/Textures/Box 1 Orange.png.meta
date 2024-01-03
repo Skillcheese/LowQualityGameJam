@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Box 1 Orange_0: 4923486073532489434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

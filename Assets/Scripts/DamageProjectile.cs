@@ -24,7 +24,8 @@ public class DamageProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other == Instigator) return;
+        if (other.gameObject == Instigator) return;
+        if (other.GetComponent<DamageProjectile>()) return;
         HealthComponent hp = other.GetComponent<HealthComponent>();
         hp.TakeDamage(Damage);
         Destroy(this);

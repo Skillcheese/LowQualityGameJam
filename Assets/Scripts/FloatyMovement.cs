@@ -22,10 +22,10 @@ public class FloatyMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    protected void FixedUpdate()
+    protected void Update()
     {
-        Velocity += Acceleration * Time.fixedDeltaTime;
-        transform.position += Velocity * Time.fixedDeltaTime;
+        Velocity += Acceleration * Time.deltaTime;
+        transform.position += Velocity * Time.deltaTime;
         Velocity *= DampingVelocity;
         Acceleration *= DampingAcceleration;
     }

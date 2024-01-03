@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rock 1 UVE 64x64_0: 701612767253436662
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

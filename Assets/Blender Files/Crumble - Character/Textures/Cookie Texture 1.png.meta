@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cookie Texture 1_0: 8418105742317251831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

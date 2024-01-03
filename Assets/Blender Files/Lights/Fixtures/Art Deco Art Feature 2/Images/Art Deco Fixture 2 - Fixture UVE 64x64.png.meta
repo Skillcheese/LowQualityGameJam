@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Art Deco Fixture 2 - Fixture UVE 64x64_0: -7730837332824149394
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

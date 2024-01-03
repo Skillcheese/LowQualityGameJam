@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Art Deco Lamp 3 Fixture Texture 1_0: -3924256487786324857
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
