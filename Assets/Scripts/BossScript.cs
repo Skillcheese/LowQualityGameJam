@@ -38,7 +38,8 @@ public class BossScript : MonoBehaviour
             }
             else
             {
-                StartCoroutine(DoCross(5, attackDelay / 5));
+                numProjectiles = 10;
+                StartCoroutine(DoCross(numProjectiles, attackDelay / numProjectiles));
             }
             yield return new WaitForSeconds(attackDelay + downtime);
         }
